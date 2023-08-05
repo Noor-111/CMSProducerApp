@@ -1,0 +1,61 @@
+{
+  "namespace": "clients.avro",
+  "type": "record",
+  "name": "Product",
+  "fields": [
+    {
+      "name": "PogId",
+      "type": "long"
+    },
+    {
+      "name": "Supc",
+      "type": "string"
+    },
+    {
+      "name": "Brand",
+      "type": "string"
+    },
+    {
+      "name": "Description",
+      "type": "string"
+    },
+    {
+      "name": "Size",
+      "type": "string"
+    },
+    {
+      "name": "Category",
+      "type": "string"
+    },
+    {
+      "name": "SubCategory",
+      "type": "string"
+    },
+    {
+      "name": "Price",
+      "type": "float"
+    },
+    {
+      "name": "Quantity",
+      "type": "int"
+    },
+    {
+      "name": "Country",
+      "type": "string"
+    },
+    {
+      "name": "SellerCode",
+      "type": "string"
+    },
+    {
+      "name": "CreationTime",
+      "type": "long",
+      "logicalType": "timestamp-millis"
+    },
+    {
+      "name": "Stock",
+      "type": "string",
+      "doc": "Possible values: 'In Stock', 'Out Of Stock', 'Discontinued'"
+    }
+  ]
+}
