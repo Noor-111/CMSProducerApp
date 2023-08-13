@@ -22,7 +22,7 @@ public class Producer {
     static final String KAFKA_TOPIC = "products";
 
     private static long recordCount = 0;
-    private static final long TIME_INTERVAL = 100;
+    private static final long TIME_INTERVAL = 1000;
 
     public static void main(String[] args) throws IOException, InterruptedException {
         System.out.println("Starting Java producer.");
@@ -69,7 +69,7 @@ public class Producer {
 
         // Loop over the products CSV file
         try{
-            int testCount=200000;
+            int testCount=rows.length;
             long startTime = System.currentTimeMillis();
             for(int i=1;i<testCount;i++){
                 final String key = rows[i].split(",")[0];// make PogId as key
